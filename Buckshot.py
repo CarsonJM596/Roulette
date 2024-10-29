@@ -31,7 +31,7 @@ def show_Poss(blank,live,total):
     return {"First Bullet Blank": blankf, "First Bullet Live": livef} #returns formatted possibilities    
 #main
 t = 9 #intiates while loop
-while (invalid_Count(t)): #Shotgun can have more than 8 bullets
+while (invalid_Count(t)): #Shotgun can't have more than 8 bullets
     l = input("How many live bullets? ") 
     while (is_Valid_Bullet(l)==False): #Catch invalid input
         print("Invalid input") 
